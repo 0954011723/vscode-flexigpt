@@ -1,21 +1,13 @@
 MIT License
 
-Copyright (c) [2023] [Pankaj Pipada]
+版權所有 (c) [2023] [Pankaj Pipada]
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+在遵從以下條件的情況下，允許任何獲得軟件和相關文檔（以下簡稱"軟件"）副本的人免費使用：
+* 使用、複製、修改、合併、出版、分發、授權或販售軟件副本；
+* 將軟件提供給其他人，但必須遵守本許可證的條款和條件。
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+在所有副本或實質部分的軟件中，必須包括上述版權聲明和本許可聲明。
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+軟件按 "原樣" 提供，不提供任何明示或暗示的保證，包括但不限於適銷性、特定用途適用性和非侵權性的保證。
+無論是在合同行為、侵權行為或其他方式下，作者或版權持有人均不對任何索賠、損害或其他責任負責，包括但不
+限於使用軟件或其他處理軟件的行為所造成的損失或其他情況下的損失。 
