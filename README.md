@@ -20,8 +20,8 @@ FlexiGPT 也提供多種使用者介面和存取功能，包括鍵盤快速鍵�
 - [使用方式](#使用方式)
 - [提示文件格式](#提示文件格式)
   - [範例](#範例)
-  - [這是一個 JavaScript (.js) 提示檔案的範例](#這是一個 JavaScript (.js) 提示檔案的範例)
-  - [這是一個複雜一點的 JavaScript (.js) 提示檔案範例](#這是一個複雜一點的 JavaScript (.js) 提示檔案範例)
+  - [簡單的提示檔案的範例](#簡單的提示檔案的範例) 這是一個 JavaScript (.js) 簡單的提示檔案範例。
+  - [複雜的提示檔案的範例](#複雜的提示檔案的範例) 這是一個 JavaScript (.js) 複雜的提示檔案範例。
   - [建立命令](#建立命令)
     - [預定義系統變量](#預定義系統變量)
     - [預定義系統函數](#預定義系統函數)
@@ -112,9 +112,9 @@ FlexiGPT 預設使用 `gpt-3.5-turbo` 的模型，除非 prompt 覆寫它。
   - 您可以透過 prompt 檔案命令宣告，始終覆寫預設模型。
   - FlexiGPT 基本提示將使用預設模型集。
   - 預設值：`code-davinci-edit-001`。
-- flexigpt.promptFiles: 一個以分號分隔的使用者定義的提示配置檔案的路徑列表。提示檔案的配置詳情請見 [下面](#prompt-file-format)。
-- flexigpt.inBuiltPrompts: 一個以分號分隔的內建提示檔名列表，用於啟用內建提示。多個名稱請以 ';' 分隔。'flexigptbasic.js' 將始終啟用。可在 [這個路徑](https://github.com/ppipada/vscode-flexigpt/tree/main/media/prompts) 找到內建提示。當前值為："flexigptbasic.js" 和 "gobasic.js"。
-- 完整配置示例
+- flexigpt.promptFiles: 一個以分號分隔的使用者定義的提示配置檔案的路徑列表。提示檔案的配置詳情請見 [提示文件格式](#提示文件格式)。
+- flexigpt.inBuiltPrompts: 一個以分號分隔的內建提示檔名列表，用於啟用內建提示。多個名稱請以 ';' 分隔。'flexigptbasic.js' 將啟用。可在 [這個路徑](https://github.com/ppipada/vscode-flexigpt/tree/main/media/prompts) 找到內建提示。當前值為："flexigptbasic.js" 和 "gobasic.js"。
+- 完整配置範例
 
   ```text
   "flexigpt.openai.apiKey": "sk-mkey",
@@ -138,9 +138,9 @@ FlexiGPT 預設使用 `gpt-3.5-turbo` 的模型，除非 prompt 覆寫它。
 
   - 如果選擇預配置提示，則將在取代定義的系統/用戶變量後使用提示命令中定義的問題範本。其他命令選項也將從定義本身中獲取。
   - 如果您在文字框中輸入自由浮動問題，則文字本身將直接用作提示。
-  - 可以使用[預定義的系統變數](#預定義的系統變數)來增強您的問題。
-    - 例如：您可以使用 `{system.selection}` 來傳遞編輯器中選定的文字（代碼或其他）。
-    - 請注意，系統變量的 `system.` 前綴是可選的。因此您可以只用 `{selection}` 來選定文字，或者使用 `{language}` 取代 `{system.language}` 來使用您的文件的語言。
+  - 可以使用 [預定義的系統變數](#預定義的系統變數) 來增強您的問題。     
+    - 例如：您可以使用 `{system.selection}` 來傳遞編輯器中選定的文字（程式碼或其他）。
+    - 請注意，系統變數的 `system.` 前綴是可選的。因此您可以只用 `{selection}` 來選定文字或者用 `{language}` 取代 `{system.language}` 來使用您的文件的語言。
 
 - 要查看提示歷史記錄，請開啟 FlexiGPT 活動欄。
 
@@ -151,7 +151,7 @@ FlexiGPT 預設使用 `gpt-3.5-turbo` 的模型，除非 prompt 覆寫它。
 - [FlexiGPT 基本提示](https://github.com/ppipada/vscode-flexigpt/blob/main/media/prompts/flexigptbasic.js)
 - [Go 基本提示](https://github.com/ppipada/vscode-flexigpt/blob/main/media/prompts/gobasic.js)
 
-### 這是 javascript（.js）提示文件的範例
+### 簡單的提示檔案的範例: 這是一個 JavaScript (.js) 簡單的提示檔案範例。
 
 ```js
 module.exports = {
@@ -166,7 +166,7 @@ module.exports = {
 };
 ```
 
-### 這是較複雜的 Javascript (.js) 提示框檔案
+### 複雜的提示檔案的範例: 這是一個 JavaScript (.js) 複雜的提示檔案範例。
 
 ```js
 module.exports = {
@@ -234,7 +234,7 @@ module.exports = {
 - 範本：必填
 
   - 建立 GPT 模型請求時使用的提示範本（OpenAI等）。您可以在範本中使用系統變數或使用者定義變數。在準備請求時，變數將被取代為正確的值。
-  - 要使用系統變數，請加上 `{system.*variableName*}`，variableName 可以是[預先定義的系統變數](#predefined-system-variables)之一。
+  - 要使用系統變數，請加上 `{system.*variableName*}`，variableName 可以是 [預先定義的系統變數](#預先定義的系統變數) 之一。
   - 要使用使用者變數，請加上 `{user.*variableName*}`，variableName 必須在提示檔案的變數欄位中。
 
 - 請求參數：可選
