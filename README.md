@@ -15,21 +15,21 @@ FlexiGPT 也提供多種使用者介面和存取功能，包括鍵盤快速鍵�
 ## 目錄 (Table of contents) <!-- omit from toc -->
 
 - [功能特色](#功能特色)
-- [安裝](#installation)
-- [配置](#configuration)
-- [使用方式](#usage)
-- [提示文件格式](#prompt-file-format)
-  - [範例](#samples)
-  - [這是一個 JavaScript (.js) 提示檔案的範例](#here-is-a-sample-javascript-js-prompt-file)
-  - [這是一個複雜一點的 JavaScript (.js) 提示檔案範例](#here-is-a-more-complex-javascript-js-prompt-file)
-  - [建立命令](#creating-command)
-    - [預定義系統變量](#predefined-system-variables)
-    - [預定義系統函數](#predefined-system-function)
-  - [變量建立](#creating-variables)
-  - [函數建立](#creating-functions)
-- [許可證](#license)
-- [貢獻](#contributions)
-- [支援](#support)
+- [安裝](#安裝)
+- [配置](#配置)
+- [使用方式](#使用方式)
+- [提示文件格式](#提示文件格式)
+  - [範例](#範例)
+  - [這是一個 JavaScript (.js) 提示檔案的範例](#這是一個 JavaScript (.js) 提示檔案的範例)
+  - [這是一個複雜一點的 JavaScript (.js) 提示檔案範例](#這是一個複雜一點的 JavaScript (.js) 提示檔案範例)
+  - [建立命令](#建立命令)
+    - [預定義系統變量](#預定義系統變量)
+    - [預定義系統函數](#預定義系統函數)
+  - [變量建立](#變量建立)
+  - [函數建立](#函數建立)
+- [許可證](#許可證)
+- [貢獻](#貢獻)
+- [支援](#支援)
 
 ## 功能特色
 
@@ -42,7 +42,7 @@ FlexiGPT 也提供多種使用者介面和存取功能，包括鍵盤快速鍵�
 - 使用預先定義的提示在配置文件中
 
   - 工程師和微調提示，儲存並直接在 VSCode 中使用。
-  - 可以使用預定義功能或自定義功能來分類提示。內建多種的 [預定義系統功能](#predefined-system-function)。
+  - 可以使用預定義功能或自定義功能來分類提示。內建多種的 [預定義系統功能](#預定義系統功能)。
   - 支援 GPT API 的請求參數修改
   - 支援在提示中通過 responseHandlers 進行後處理響應。
   - 內建提示：
@@ -138,7 +138,7 @@ FlexiGPT 預設使用 `gpt-3.5-turbo` 的模型，除非 prompt 覆寫它。
 
   - 如果選擇預配置提示，則將在取代定義的系統/用戶變量後使用提示命令中定義的問題範本。其他命令選項也將從定義本身中獲取。
   - 如果您在文字框中輸入自由浮動問題，則文字本身將直接用作提示。
-  - 可以使用[預定義的系統變量](#predefined-system-variables)來增強您的問題。
+  - 可以使用[預定義的系統變數](#預定義的系統變數)來增強您的問題。
     - 例如：您可以使用 `{system.selection}` 來傳遞編輯器中選定的文字（代碼或其他）。
     - 請注意，系統變量的 `system.` 前綴是可選的。因此您可以只用 `{selection}` 來選定文字，或者使用 `{language}` 取代 `{system.language}` 來使用您的文件的語言。
 
@@ -245,7 +245,7 @@ module.exports = {
 
 - 回應處理程序：可選
 
-  - 回應處理程序用於處理回應。預設使用取代函數。處理函數可以是 [預先定義的系統函數](#predefined-system-function) 或使用者定義函數之一。
+  - 回應處理程序用於處理回應。預設使用取代函數。處理函數可以是 [預先定義的系統函數](#預先定義的系統函數) 或使用者定義函數之一。
   - 您可以使用以下方式設置回應處理程序：
 
     - 僅使用函數名稱。函數使用預設值執行。
