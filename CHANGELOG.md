@@ -1,73 +1,73 @@
-# Change Log
+# 更新日誌
 
 ## [v0.7.3]
 
-### Added
+### 新增
 
-- Chat completions support.
-- Load/save/export support.
+- 支援聊天提示補全功能。
+- 支援載入、儲存、匯出。
 
-### Changed
+### 修改
 
-- Gitignore conversations.
+- 更改 .gitignore 設定。
 
 ## [v0.7.2]
 
-### Added
+### 新增
 
-- Shorthand for system variables.
+- 系統變數的縮寫。
 
-### Fixed
+### 修正
 
-- Issue 3.
-- Add tests.
+- Issue 3。
+- 增加測試。
 
 ## [v0.7.1]
 
-### Added
+### 新增
 
-- Chatintegrate initial.
+- Chatintegrate 初版。
 
 ## [v0.7.0]
 
-### Added
+### 新增
 
-- Request/response accordion in UI.
-- Support adding more/large number of prompts in the extension itself and enabling/disabling them for usage via configuration.
+- UI 中新增請求/回應擋板。
+- 支援透過擴展本身加入更多/大量提示，並透過配置啟用/禁用它們。
+- 支援處理器。
 
-### Changed
+### 修改
 
-- Icon change.
+- 更改圖示。
 
 ## [v0.6.1]
 
-### Changed
+### 修改
 
-- Logo change.
+- 更改標誌。
 
 ## [v0.6.0]
 
-### Added
+### 新增
 
-- UI response handling improvement.
+- 改進 UI 回應處理。
 
-### Changed
+### 修改
 
-- Icon change.
+- 更改圖示。
 
 ## [v0.5.0]
 
-### Added
+### 新增
 
-- UI changes with UI response handling improvement.
-- Support for adding more/large number of prompts in the extension
-  itself and enabling/disabling them for usage via configuration.
-- Handler support.
-- Default model support.
-- Support for adding request params to prompt.
-- Response handler refactoring and some dependency changes.
-- Support Ask anything and provide variable use option too.
-- Full API in JS.
+- 改進 UI 回應處理及 UI 變更。
+- 支援透過擴展本身加入更多/大量提示，並透過配置啟用/禁用它們。
+- 支援處理器。
+- 支援預設模型。
+- 支援將請求參數加入到提示中。
+- 重構回應處理及變更相關相依套件。
+- 支援 Ask anything 和提供變數使用選項。
+- 完整的 JS API。
 
 [v0.7.3]: https://github.com/ppipada/vscode-flexigpt/compare/v0.7.2...v0.7.3
 [v0.7.2]: https://github.com/ppipada/vscode-flexigpt/compare/v0.7.1...v0.7.2
