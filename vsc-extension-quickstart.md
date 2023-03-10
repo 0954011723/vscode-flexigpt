@@ -42,6 +42,6 @@
 ## 更深入了解
 
 * [遵循 UX 指南](https://code.visualstudio.com/api/ux-guidelines/overview) 建立與 VS Code 本機介面和無縫模式整合的擴件。
-* 通過 [封裝擴件](https://code.visualstudio.com/api/working-with-extensions/bundling-extension) 來減少擴展大小和改善啟動時間。
+* 通過 [封裝擴件](https://code.visualstudio.com/api/working-with-extensions/bundling-extension) 來減少套件大小和改善啟動時間。
 * 在 VS Code 套件市集中 [發佈套件](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)。
 * 透過設置 [持續整合](https://code.visualstudio.com/api/working-with-extensions/continuous-integration) 來自動化構建。
